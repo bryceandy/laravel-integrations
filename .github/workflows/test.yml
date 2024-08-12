@@ -41,7 +41,7 @@ jobs:
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit --coverage-clover=storage/logs/clover.xml
+        run: vendor/bin/phpunit --coverage-clover=build/logs/clover.xml
 
       - name: Send coverage to Coveralls
         env:
