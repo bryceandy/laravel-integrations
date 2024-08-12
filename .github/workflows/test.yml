@@ -23,6 +23,9 @@ jobs:
       - name: Install Dependencies
         run: composer install -n --prefer-dist
 
+      - name: Install PHP Coveralls
+        run: composer require php-coveralls/php-coveralls --dev
+
       - name: Generate key
         run: php artisan key:generate
 
